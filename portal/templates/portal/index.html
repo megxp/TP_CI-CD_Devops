@@ -23,6 +23,14 @@
 
     </div>
 
+    <a href="{% url 'sentry_debug' %}">
+        <button>🔄 Test Sentry</button>
+    </a>
+    
+    {% if error %}
+    <p style="color: orange;">Error occurred</p>
+    {% endif %}
+
 </body>
 
 </html>
