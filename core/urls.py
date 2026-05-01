@@ -22,4 +22,6 @@ from portal.views import home  # ← cette ligne est indispensable
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
+    path('sentry-debug/', trigger_error, name='sentry_debug'),
+]
 ]
